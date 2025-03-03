@@ -33,3 +33,24 @@ newli.setAttribute("onclick", `removeInventoryItem("$)`)
 inventoryList.appendChild(newItem);
 
 
+
+//Task 4
+
+
+const customerCardSection = document.getElementById("customerSection");
+const customerCards = document.querySelectorAll("customer-card");
+
+
+const (customerCards).forEach(card => {
+   card.addEventListener("click", (event)=> {
+       console.log('Customer has clicked ${card.innerHTML}'));
+       event.stopPropagation();
+   });
+});
+
+
+customerCardSection.addEventListener("click", (event) => {
+   console.log(`Customer User has clicked the customerSection`);
+  
+});
+
