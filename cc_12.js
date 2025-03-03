@@ -16,3 +16,20 @@ metricCardArray.forEach(card => {
 })
 
 
+// Task 3
+const inventoryList = document.getElementByID("inventoryList");
+
+
+function addInventoryItem(productName) {
+
+
+   const newli = document.createElement("li");
+
+
+newli.setAttribute("class", "product-item");
+newli.setAttribute("Id",productName);
+newli.setAttribute("onclick", `removeInventoryItem("$)`)
+}
+inventoryList.appendChild(newItem);
+
+
